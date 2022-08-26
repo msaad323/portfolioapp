@@ -21,7 +21,7 @@ router.post("/contact", (req, res) => {
   });
   let mailOptions = {
     from: data.email,
-    to: "edubabadigital@gmail.com",
+    to: "saad500nbd@gmail.com",
     subject: `message from ${data.name}`,
     html: `
 
