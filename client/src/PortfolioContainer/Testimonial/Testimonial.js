@@ -7,9 +7,12 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
-import lady from "../../../src/img/Testimonial/lady.png";
-import mike from "../../../src/img/Testimonial/mike.png";
-import man from "../../../src/img/Testimonial/man.png";
+// import lady from "../../../src/img/Testimonial/lady.png";
+// import mike from "../../../src/img/Testimonial/mike.png";
+import alok from "../../../src/img/Testimonial/alok.jpeg";
+import sristi from "../../../src/img/Testimonial/sristi.jpeg";
+import utkarsh from "../../../src/img/Testimonial/utkarsh.jpeg";
+// import man from "../../../src/img/Testimonial/man.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
 
 export default function Testimonial(props) {
@@ -62,7 +65,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
+                      I patronized Saad and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
                       <i className="fa fa-quote-right" />
@@ -86,9 +89,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={utkarsh} alt="no internet connection"></img>
+                    <h5>Utkarsh</h5>
+                    <p>Team Lead Globallogic</p>
                   </div>
                 </div>
               </div>
@@ -98,7 +101,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      It was nice hiring this guy for my e-commerce project.He
+                      It was nice hiring this guy for my edtech project.He
                       delivered even more than i can imagine. I recommend him
                       for you.
                       <i className="fa fa-quote-right" />
@@ -122,9 +125,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={mike} alt="no internet connection"></img>
-                    <h5>Mikel</h5>
-                    <p>CEO MikeTech</p>
+                    <img src={alok} alt="no internet connection"></img>
+                    <h5>Alok</h5>
+                    <p>CTO MiniVenture lab</p>
                   </div>
                 </div>
               </div>
@@ -157,13 +160,13 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={sristi} alt="no internet connection"></img>
+                    <h5>Sristi Singh</h5>
+                    <p>Team Lead Globallogic</p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
@@ -197,7 +200,7 @@ export default function Testimonial(props) {
                     <p>Bnaker</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </OwlCarousel>
           </div>
         </div>

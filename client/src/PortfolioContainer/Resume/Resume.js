@@ -101,7 +101,7 @@ const Resume = (props) => {
 
       <ResumeHeading
         heading={"Krishna Institute of Engineering & Technology, Ghaziabad"}
-        subHeading={"Bachelor of Technology"}
+        subHeading={"BACHELOR OF TECHNOLOGY"}
         fromDate={"2018"}
         toDate={"2014"}
       />

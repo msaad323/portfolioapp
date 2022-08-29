@@ -53,6 +53,10 @@
     width: 100%;
     padding: 0 40px;
     position: relative;
+
+  }
+  .header-logo{
+    margin-left: auto;
   }
   .header-options {
     display: flex;
