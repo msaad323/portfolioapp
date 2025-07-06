@@ -5,12 +5,9 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-// import lady from "../../../src/img/Testimonial/lady.png";
-// import mike from "../../../src/img/Testimonial/mike.png";
 import alok from "../../../src/img/Testimonial/alok.jpeg";
 import sristi from "../../../src/img/Testimonial/sristi.jpeg";
 import utkarsh from "../../../src/img/Testimonial/utkarsh.jpeg";
-import man from "../../../src/img/Testimonial/man.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
 import "./Testimonial.css";
 
