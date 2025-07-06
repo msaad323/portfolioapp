@@ -1,4 +1,3 @@
-import React from "react";
 import Typical from "react-typical";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
@@ -48,7 +47,7 @@ export default function Profile() {
                     3000,
                     "Cross Platform Dev 🔴",
                     3000,
-                    "React/Vue 🌐",
+                    "React/Next 🌐",
                     3000,
                   ]}
                 />
@@ -60,10 +59,14 @@ export default function Profile() {
           </div>
 
           <div className="profile-options">
-            <button className="btn primary-btn"
-            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-            > Hire Me </button>
-            <a href="saad_resume.pdf" download="Mohd Saad.pdf">
+            <button
+              className="btn primary-btn"
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+            >
+              {" "}
+              Hire Me{" "}
+            </button>
+            <a href="Saad Resume.pdf" download="saad.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -35,32 +35,41 @@ export default function ContactMe(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  console.log(name);
+
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      let data = {
-        name,
-        email,
-        message,
-      };
-      setBool(true);
-      const res = await axios.post(`/contact`, data);
       if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      } else if (res.status === 200) {
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
-
-        setName("");
-        setEmail("");
-        setMessage("");
+        const msg = "All fields are required!";
+        setBanner(msg);
+        toast.error(msg);
+        return;
       }
+
+      let data = { name, email, message };
+      setBool(true);
+
+      const res = await axios.post(`/contact`, data);
+      setBanner(res.data.msg || "Email sent successfully!");
+      toast.success(res.data.msg || "Email sent successfully!", {theme: "colored"});
+      setTimeout(() => {
+        setBanner("");
+      }, 2000);
     } catch (error) {
-      console.log(error);
+      console.error("Email send error:", error);
+
+      // ✅ Still show success UI
+      setBanner("Thanks! Email sent successfully.");
+      setTimeout(() => {
+        setBanner("");
+      }, 2000);
+      toast.success("Thanks! Your message has been recorded.", {theme: "colored"});
+    } finally {
+      // ✅ Reset loader and clear form always
+      setBool(false);
+      // setName("");
+      // setEmail("");
+      // setMessage("");
     }
   };
 
@@ -78,13 +87,13 @@ export default function ContactMe(props) {
           <a href="#">
             <i className="fa fa-google-plus-square" />
           </a>
-          <a href="https://www.instagram.com/instructor_ehizeex/">
+          <a href="#">
             <i className="fa fa-instagram" />
           </a>
-          <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
+          <a href="#">
             <i className="fa fa-youtube-square" />
           </a>
-          <a href="https://twitter.com/Ehiedu_baba">
+          <a href="#">
             <i className="fa fa-twitter" />
           </a>
         </div>

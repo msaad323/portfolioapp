@@ -55,11 +55,11 @@ const Resume = (props) => {
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    { skill: "Vue JS", ratingPercentage: 85 },
+    { skill: "Next JS", ratingPercentage: 85 },
     { skill: "Express JS", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "MySQL", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
+    { skill: "Postgresql", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
   ];
@@ -117,33 +117,75 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Mini venture lab"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"May 2021"}
+          heading={"Mobiuso Technologies Pvt. Ltd"}
+          subHeading={"SOFTWARE ENGINEER"}
+          fromDate={"Oct 2022"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            - Engineered and maintained core modules for a large-scale
+            subscription-based web platform, supporting video content, user
+            onboarding, and service bookings.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Built dynamic UI modules using React.js, TypeScript, and Next.js
+            to support user onboarding and scheduling flows.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Contributed to overall system design discussions, including
+            database schema decisions (MongoDB + SQL), service decomposition,
+            and API versioning strategies.
           </span>
         </div>
+      </div>
+      <br />
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Mini venture lab"}
+          subHeading={"SOFTWARE ENGINEER INTERN"}
+          fromDate={"May 2022"}
+          toDate={"Aug 2022"}
+        />
         <div className="experience-description">
           <span className="resume-description-text">
+            - Worked as MERN stack web developer
+          </span>
+          <br />
+          <span className="resume-description-text">
             - Developed an edtech website for client with the dashboard for
-            managing the universities, posts, admission, users, careers, subscribtion etc. .
+            managing the universities, posts, admission, users, careers,
+            subscribtion etc.
           </span>
           <br />
           <span className="resume-description-text">
             - Integrated the web app with backend services to create new user
             onboarding application with dynamic form content.{" "}
           </span>
-          <br />
+        </div>
+      </div>
+      <br />
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"GlobalLogic Inc"}
+          subHeading={"ASSOCIATE SOFTWARE ENGINEER"}
+          fromDate={"June 2021"}
+          toDate={"June 2022"}
+        />
+        <div className="experience-description">
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Developed and delivered a production-grade finance dashboard using
+            React.js and Chart.js, translating complex Figma designs into
+            interactive components and real-time data visualizations powered by
+            REST APIs, improving user task completion time by 20%.
           </span>
           <br />
+          <span className="resume-description-text">
+            - Integrated the web app with backend services to create new user
+            onboarding application with dynamic form content.{" "}
+          </span>
         </div>
       </div>
     </div>,

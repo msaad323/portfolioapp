@@ -13,20 +13,20 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
-    description:
-      "Full stack developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a M.Tech willing to be an asset for an organization.",
-    highlights: {
-      bullets: [
-        "Full Stack web development",
-        "Interactive Front End as per the design",
-        "React and React Router",
-        "Redux for State Mnanagement",
-        "Building REST API",
-        "Managing database",
-      ],
-      heading: "Here are a Few Highlights:",
-    },
-  };
+  description:
+    "Full stack developer with strong experience in the MERN stack, passionate about delivering high-quality, scalable applications with clean and efficient code.",
+  highlights: {
+    bullets: [
+      "Full Stack Development with MERN (React, Next, Express, Node.js, MySql, Mongo)",
+      "Modern React with Hooks, Context API & React Router",
+      "State Management using Redux Toolkit",
+      "Responsive UI using Tailwind CSS and Material UI",
+      "RESTful API development and integration with React Query",
+      "Authentication & Role-based Access Control using JWT",
+    ],
+    heading: "Here are a Few Highlights:",
+  },
+};
   const renderHighlight = () => {
     return SCREEN_CONSTSANTS.highlights.bullets.map((value, i) => (
       <div className="highlight" key={i}>
@@ -63,7 +63,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+              <a href="Saad Resume.pdf" download="saad.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

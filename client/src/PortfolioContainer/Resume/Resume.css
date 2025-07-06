@@ -97,6 +97,7 @@
   justify-content: space-evenly;
   height: 360px;
   width: 100%;
+  overflow-y: auto;
 }
 
 .resume-heading {

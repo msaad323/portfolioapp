@@ -1,4 +1,3 @@
-import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -6,14 +5,14 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import "./Testimonial.css";
 // import lady from "../../../src/img/Testimonial/lady.png";
 // import mike from "../../../src/img/Testimonial/mike.png";
 import alok from "../../../src/img/Testimonial/alok.jpeg";
 import sristi from "../../../src/img/Testimonial/sristi.jpeg";
 import utkarsh from "../../../src/img/Testimonial/utkarsh.jpeg";
-// import man from "../../../src/img/Testimonial/man.png";
+import man from "../../../src/img/Testimonial/man.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
+import "./Testimonial.css";
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -56,7 +55,7 @@ export default function Testimonial(props) {
         <div className="container">
           <div className="row">
             <OwlCarousel
-              className="owl-carousel"
+              className="owl-carousel gap-4"
               id="testimonial-carousel"
               {...options}
             >
@@ -65,9 +64,9 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Saad and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      I patronized Saad and when He delivered, I honestly fell
+                      in love with the project He is a very honest guy and he
+                      delivers ontime.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -95,7 +94,6 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
-
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
@@ -166,14 +164,15 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-lg-12">
+              <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      Working with Saad has been an absolute pleasure. His
+                      ability to grasp complex problems, take initiative, and
+                      deliver clean, scalable solutions consistently exceeded
+                      our expectations.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -195,12 +194,12 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={man} alt="no internet connection"></img>
-                    <h5>John Smith</h5>
-                    <p>Bnaker</p>
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="no internet connection"></img>
+                    <h5>Pavitar Dua</h5>
+                    <p>Engineering Manager Mobiuso</p>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </OwlCarousel>
           </div>
         </div>
