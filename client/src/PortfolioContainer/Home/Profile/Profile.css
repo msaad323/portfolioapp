@@ -109,10 +109,12 @@
   .profile-parent {
     flex-direction: column-reverse;
     margin: 40px 0 0 0;
+    padding: 0 20px;
   }
   .profile-options {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 20px;
   }
   .proflie-details {
     margin: 25px 0 0;
