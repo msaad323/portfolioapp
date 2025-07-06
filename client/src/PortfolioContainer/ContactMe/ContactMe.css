@@ -1,13 +1,13 @@
 .main-container {
   min-height: 100vh;
   /* background-image: url("../../assets/ContactMe/contact_us.jpeg"); */
-
+  padding: 0 20px;
   margin: 100px 0 -450px 0;
 }
 
 .central-form {
   max-width: 1100px;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   box-shadow: 0 0px 20px -2px #1f2235;
   border-radius: 12px;
