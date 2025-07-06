@@ -13,8 +13,8 @@
   color: var(--white);
 }
 .header-logo1 {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   padding: 0;
   /* font-size: 50px; */
